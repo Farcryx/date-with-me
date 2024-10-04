@@ -10,19 +10,22 @@ import {FormContext} from "../FormContext.jsx";
 const fifth = () => {
     const { formData, setFormData } = useContext(FormContext);
     const [showInput, setShowInput] = useState(false);
+    let statusInnegoFilmu = true;
 
     const handleRadioChange = (event) => {
         const { value } = event.target;
         setFormData({ ...formData, movie: value });
-        if (value === 'inne') {
+        if (value === 'Inny Film' && statusInnegoFilmu === true) {
             setShowInput(true);
+            statusInnegoFilmu = false;
         } else {
             setShowInput(false);
         }
     };
 
-    const handleCommentsChange = (event) => {
-        setFormData({ ...formData, foodComments: event.target.value });
+    const handleInputChange = (event) => {
+        const { value } = event.target;
+        setFormData({ ...formData, jakiFilm: value });
     };
 
     return (
@@ -62,15 +65,15 @@ const fifth = () => {
                 </div>
 
                 <div className="margin">
-                    <input className="radio" type="radio" id="inne" name="movie" value="inne"
+                    <input className="radio" type="radio" id="innyFilm" name="movie" value="Inny Film"
                            onChange={handleRadioChange}/>
-                    <label htmlFor="inne">
+                    <label htmlFor="innyFilm">
                         <img className="fotka" src={inne} alt="Inne"/>
                     </label><br/>
                 </div>
             </div>
-            {showInput && <input className="inne" type="text" id="inneInput" name="inneInput"
-                                 placeholder="Co chciałabyś zjeść?"/>}
+            {showInput && <input className="inne" type="text" id="jakiFilm" name="nieokreślono"
+                                 placeholder="Co chciałabyś obejrzeć?" onChange={handleInputChange}/>}
             <Link to="/sixth">
                 <button className="yes_button">
                     KONTYNUUJ

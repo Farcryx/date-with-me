@@ -9,9 +9,9 @@ const Eighth = () => {
             <p>Data: {formData.date}</p>
             <p>Godzina: {formData.time}</p>
             <p>Jedzenie: {formData.food}</p>
-            <p>Uwagi do jedzenia: {formData.foodComments}</p>
+            <p>Uwagi do jedzenia: {formData.jakieJedzenie}</p>
             <p>Film: {formData.movie}</p>
-            <p>Uwagi do filmu: {formData.movieComments}</p>
+            <p>Uwagi do filmu: {formData.jakiFilm}</p>
             <p>Życzenie: {formData.wish}</p>
             <p>Poziom ekscytacji: {formData.excitement}%</p>
         </div>

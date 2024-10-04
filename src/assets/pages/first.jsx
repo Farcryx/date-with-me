@@ -3,21 +3,33 @@ import {Link} from "react-router-dom";
 import {useState} from "react";
 
 const first = () => {
-    const info =[
+    const info = [
         "Pookie?",
         "Proszę!!!",
         "Łamiesz mi serduszko",
-        "ciupapi",
-        "munianio",
-        "NIGGERS",
-        "oh hell nah",
-        "PANIE GŻEGOŻÓ",
-        "PANIE ĄRURO"
+        "Słońce, proszę",
+        "Kochanie, nie rób mi tego",
+        "Nie chcesz mnie zranić, prawda?",
+        "Pójdź proszę ze mną na randkę",
+        "Przecież wiesz, że Cię kocham",
+        "Zrób to dla mnie",
+        "Julia, proszę!!!",
+        "Bo się obrażę",
+        "Kocham Cię, więc zrób to proszę dla mnie i pójdź ze mną na randkę"
     ]
     const [count, setCount] = useState(0)
 
+    function checkCount() {
+        if (count === 11) {
+            document.querySelector(".no_button").style.display = "none"
+            document.querySelector(".yes_button").style.boxShadow = "0 0 100px 0 rgba(255, 100, 100, 0.67)"
+            document.querySelector(".info").style.marginTop = "5%"
+        }
+    }
+
     function add() {
         setCount(count + 1)
+        checkCount()
     }
 
     return (
@@ -33,7 +45,7 @@ const first = () => {
                     <button
                         className="yes_button"
                         style={{
-                            scale: `${100 * (count/6 + 1)}%`,
+                            scale: `${100 * (count / 6 + 1)}%`,
                         }}
                     >
                         TAK
@@ -44,7 +56,7 @@ const first = () => {
                     <button
                         className="no_button"
                         style={{
-                            scale: `${100 / (count/6 + 1)}%`,
+                            scale: `${100 / (count / 6 + 1)}%`,
                         }}
                         onClick={add}
                     >
@@ -52,7 +64,7 @@ const first = () => {
                     </button>
                 </Link>
             </div>
-            <p>{info[count%3]}</p>
+            <p className="info">{info[(count - 1)]}</p>
         </div>
     )
 }
