@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import {useContext} from "react";
 import {FormContext} from "../FormContext.jsx";
 
-const seventh = () => {
+const Seventh = () => {
     const {formData, setFormData} = useContext(FormContext);
 
     const handleExcitementChange = (event) => {
@@ -24,4 +24,4 @@ const seventh = () => {
     );
 }
 
-export default seventh;
+export default Seventh;

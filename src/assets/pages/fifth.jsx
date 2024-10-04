@@ -7,7 +7,7 @@ import {useContext, useState} from "react";
 import {Link} from "react-router-dom";
 import {FormContext} from "../FormContext.jsx";
 
-const fifth = () => {
+const Fifth = () => {
     const { formData, setFormData } = useContext(FormContext);
     const [showInput, setShowInput] = useState(false);
     let statusInnegoFilmu = true;
@@ -83,4 +83,4 @@ const fifth = () => {
     )
 }
 
-export default fifth
+export default Fifth

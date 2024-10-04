@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {useContext} from "react";
 import {FormContext} from "../FormContext.jsx";
 
-const third = () => {
+const Third = () => {
     const { formData, setFormData } = useContext(FormContext);
 
     const handleDateChange = (event) => {
@@ -29,4 +29,4 @@ const third = () => {
     )
 }
 
-export default third
+export default Third

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {useContext, useState} from "react";
 import {FormContext} from "../FormContext.jsx";
 
-const first = () => {
+const First = () => {
     const info = [
         "Pookie?",
         "Proszę!!!",
@@ -79,4 +79,4 @@ const first = () => {
     )
 }
 
-export default first
+export default First

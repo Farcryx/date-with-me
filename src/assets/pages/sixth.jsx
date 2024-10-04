@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import {useContext} from "react";
 import {FormContext} from "../FormContext.jsx";
 
-const sixth = () => {
+const Sixth = () => {
     const {formData, setFormData} = useContext(FormContext);
 
     const handleWishChange = (event) => {
@@ -22,4 +22,4 @@ const sixth = () => {
     )
 }
 
-export default sixth
+export default Sixth

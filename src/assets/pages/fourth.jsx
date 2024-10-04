@@ -6,7 +6,7 @@ import inne from "../img/food/inne.jpg";
 import {Link} from "react-router-dom";
 import {FormContext} from "../FormContext.jsx";
 
-const fourth = () => {
+const Fourth = () => {
     const {formData, setFormData} = useContext(FormContext);
     const [showInput, setShowInput] = useState(false);
     let statusInnegoJedzenia = true;
@@ -80,4 +80,4 @@ const fourth = () => {
     );
 };
 
-export default fourth
+export default Fourth

@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import golden from "../img/golden1.jpg";
 
-const second = () => {
+const Second = () => {
     return (
         <div className="layout">
             <h1>TAAAAAAAAAAK!!!!<br/> Kliknij dalej!</h1>
@@ -15,4 +15,4 @@ const second = () => {
     )
 }
 
-export default second
+export default Second
