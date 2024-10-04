@@ -62,7 +62,7 @@ const First = () => {
                     </button>
                 </Link>
 
-                <Link to="/">
+                <Link to="/date-with-me">
                     <button
                         className="no_button"
                         style={{
