@@ -20,7 +20,7 @@ const third = () => {
             {/*Date choice with hour*/}
             <input type="date" id="date" name="date" onChange={handleDateChange}/>
             <input type="time" id="time" name="time" onChange={handleTimeChange}/>
-            <Link to="/fourth">
+            <Link to="/fourth" className="next-button">
                 <button className="yes_button">
                     KONTYNUUJ
                 </button>

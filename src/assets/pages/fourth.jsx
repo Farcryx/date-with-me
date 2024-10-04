@@ -71,7 +71,7 @@ const fourth = () => {
             {/*       onChange={handleRadioChange}/>*/}
 
 
-            <Link to="/fifth">
+            <Link to="/fifth" className="next-button">
                 <button className="yes_button">
                     KONTYNUUJ
                 </button>

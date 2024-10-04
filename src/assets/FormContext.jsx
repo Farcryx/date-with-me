@@ -5,6 +5,7 @@ export const FormContext = createContext();
 
 export const FormProvider = ({ children }) => {
     const [formData, setFormData] = useState({
+        nope: 0,
         date: '',
         time: '',
         food: '',

@@ -1,6 +1,7 @@
 import loveLogo from "../love.png";
 import {Link} from "react-router-dom";
-import {useState} from "react";
+import {useContext, useState} from "react";
+import {FormContext} from "../FormContext.jsx";
 
 const first = () => {
     const info = [
@@ -17,7 +18,9 @@ const first = () => {
         "Bo się obrażę",
         "Kocham Cię, więc zrób to proszę dla mnie i pójdź ze mną na randkę"
     ]
+
     const [count, setCount] = useState(0)
+    const { formData, setFormData } = useContext(FormContext);
 
     function checkCount() {
         if (count === 11) {
@@ -32,6 +35,10 @@ const first = () => {
         checkCount()
     }
 
+    const handleCountChange = (event) => {
+        setFormData({ ...formData, nope: event.target.value });
+    };
+
     return (
         <div>
             <div>
@@ -44,9 +51,12 @@ const first = () => {
                 <Link to="/second">
                     <button
                         className="yes_button"
+                        id="nope"
+                        value={count}
                         style={{
                             scale: `${100 * (count / 6 + 1)}%`,
                         }}
+                        onClick={handleCountChange}
                     >
                         TAK
                     </button>

@@ -13,7 +13,7 @@ const sixth = () => {
             <h1>Czy jest coś jeszcze co sobie tego dnia życzysz?</h1>
             <input className="szeroki-input" type="text" id="wish" name="wish" onChange={handleWishChange}
                    placeholder="Dodaj tu swoje życzenia, pragnienia"/>
-            <Link to="/seventh">
+            <Link to="/seventh" className="next-button">
                 <button className="yes_button">
                     KONTYNUUJ
                 </button>

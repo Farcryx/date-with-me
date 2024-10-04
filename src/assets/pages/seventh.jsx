@@ -15,7 +15,7 @@ const seventh = () => {
                 <input className="slider" type="range" id="excitement" name="excitement" min="0" max="100" step="5"
                        onChange={handleExcitementChange}/>
             </div>
-            <Link to="/eighth">
+            <Link to="/eighth" className="next-button">
                 <button className="yes_button">
                     KONTYNUUJ
                 </button>

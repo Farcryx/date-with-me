@@ -74,7 +74,7 @@ const fifth = () => {
             </div>
             {showInput && <input className="inne" type="text" id="jakiFilm" name="nieokreślono"
                                  placeholder="Co chciałabyś obejrzeć?" onChange={handleInputChange}/>}
-            <Link to="/sixth">
+            <Link to="/sixth" className="next-button">
                 <button className="yes_button">
                     KONTYNUUJ
                 </button>
