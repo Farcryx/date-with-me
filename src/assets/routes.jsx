@@ -11,7 +11,7 @@ import {Route, Routes} from "react-router-dom";
 const routes = () => {
     return (
         <Routes>
-            <Route path="/" element={<First/>}/>
+            <Route path="/date-with-me" element={<First/>}/>
             <Route path="/second" element={<Second/>}/>
             <Route path="/third" element={<Third/>}/>
             <Route path="/fourth" element={<Fourth/>}/>
