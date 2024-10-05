@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import {useContext} from "react";
 import {FormContext} from "../FormContext.jsx";
+import golden_flowers from "../img/golden_flowers.jpg";
 
 const Sixth = () => {
     const {formData, setFormData} = useContext(FormContext);
@@ -10,7 +11,8 @@ const Sixth = () => {
     };
     return (
         <div className="layout">
-            <h1>Czy jest coś jeszcze co sobie tego dnia życzysz?</h1>
+            <img src={golden_flowers} className="goldenek" alt="Golden Retriever"/>
+            <h1>Jeszcze jakieś życzenia <br/>Moja Księżniczko? &#128120;&#127995;</h1>
             <input className="szeroki-input" type="text" id="wish" name="wish" onChange={handleWishChange}
                    placeholder="Dodaj tu swoje życzenia, pragnienia"/>
             <Link to="/seventh" className="next-button">

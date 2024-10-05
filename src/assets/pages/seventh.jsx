@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import {useContext} from "react";
 import {FormContext} from "../FormContext.jsx";
+import golden_popcorn from "../img/golden_popcorn.jpg";
 
 const Seventh = () => {
     const {formData, setFormData} = useContext(FormContext);
@@ -10,7 +11,8 @@ const Seventh = () => {
     };
     return (
         <div className="layout">
-            <h1>Jak bardzo podekscytowana jesteś?</h1>
+            <img src={golden_popcorn} className="goldenek" alt="Golden Retriever"/>
+            <h1>Jak bardzo <br/>podekscytowana jesteś?</h1>
             <div className="card">
                 <input className="slider" type="range" id="excitement" name="excitement" min="0" max="100" step="5"
                        onChange={handleExcitementChange}/>
