@@ -30,7 +30,7 @@ const Third = () => {
             <h1>Kiedy masz czas?</h1>
             <img src={golden} className="goldenek" alt="Golden Retriever"/>
             <input type="date" id="date" name="date" onChange={handleDateChange}/>
-            <input type="time" id="time" name="time" onChange={handleTimeChange}/>
+            <input type="time" id="time" name="time" step="300" onChange={handleTimeChange}/>
             <Link to="/fourth" className="next-button">
                 <button className="yes_button">
                     KONTYNUUJ

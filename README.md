@@ -53,10 +53,8 @@ adresem [http://localhost:3000/date-with-me](http://localhost:3000/date-with-me)
 
 ## Skrypty
 
-- `npm start`: Uruchamia aplikację w trybie deweloperskim.
-- `npm run lint`: Sprawdza poprawność składni kodu.
-- `npm run format`: Formatuje kod.
 - `npm run dev`: Buduje aplikację w trybie deweloperskim.
+- `npm run lint`: Sprawdza poprawność składni kodu.
 - `npm run build`: Buduje aplikację do produkcji.
 
 ## Deployment

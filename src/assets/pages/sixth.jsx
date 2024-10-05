@@ -12,7 +12,7 @@ const Sixth = () => {
     return (
         <div className="layout">
             <img src={golden_flowers} className="goldenek" alt="Golden Retriever"/>
-            <h1>Jeszcze jakieś życzenia <br/>Moja Księżniczko? &#128120;&#127995;</h1>
+            <h1>Jeszcze jakieś życzenia <br/><span style={{color: 'rgba(255, 100, 100, 1)'}}>Moja Księżniczko</span>? &#128120;&#127995;</h1>
             <input className="szeroki-input" type="text" id="wish" name="wish" onChange={handleWishChange}
                    placeholder="Dodaj tu swoje życzenia, pragnienia"/>
             <Link to="/seventh" className="next-button">
